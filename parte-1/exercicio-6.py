@@ -1,11 +1,4 @@
-numeros_lista = []
-numeros_tupla = ()
+list = input('type the values you want to add, separated by comma:').split(',')
 
-numeros_digitados = input('Digite quantos números aleatorios desejar, separando-os por vírgula:')
-
-for numero in numeros_digitados.split(','):
-    numeros_lista.append(numero)
-    numeros_tupla = numeros_tupla + (numero,)
-
-print('list:', numeros_lista)
-print('tuple:', numeros_tupla)
+print(list)
+print(tuple(list))
