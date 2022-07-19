@@ -1,12 +1,8 @@
-from operator import index, indexOf
+list = input('Type the values you want, separate by comma[EX: 1,2,3,4]: ').split(',')
 
-valores = input('Digite quantos valores desejar[EX: 1,2,3,4]:')
+value = input('Which value do you want to check in the list?')
 
-valores = valores.split(',')
-
-valor_para_conferir = input('Qual valor deseja conferir na lista?')
-
-if valor_para_conferir in valores:
-    print(f'{valor_para_conferir} está na posição {valores.index(valor_para_conferir)} na lista')
+if value in list:
+    print(f'{value} is in position {list.index(value)} in the list')
 else:
-    print('valor não está na lista')
+    print('The value is not in the list')
