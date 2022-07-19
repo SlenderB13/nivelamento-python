@@ -1,8 +1,7 @@
 from datetime import date
 
-data_inicial = date(2022, 7, 14)
-data_final = date(2022, 7, 18)
+initial_date = date(2024, 9, 2)
+final_date = date(2022, 7, 18)
 
-dias_corridos = data_final - data_inicial
-
-print(dias_corridos)
+days = (initial_date - final_date).days
+print(f'Days: {days}')
