@@ -1,8 +1,4 @@
-valores = [1, 2, 'carro', 12, 'orochi']
-frase = ''
+list = [1, 5, 12, 2]
+text = ''.join(str(value) for value in list)
 
-for valor in valores:
-    frase += str(valor) + ' '
-
-
-print(frase)
+print(text)
