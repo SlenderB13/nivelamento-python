@@ -1,6 +1,5 @@
 def remove_from_list(list, number):
-    while number in list:
-        list.remove(number)
+    list = [n for n in list if n != number]
     print(len(list))
 
 remove_from_list([1,2,3,4,5,6,7,5], 5)
