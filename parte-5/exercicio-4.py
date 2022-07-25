@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
+import requests
 
-with open('parte-5/example.html') as file:
-    soup = BeautifulSoup(file)
+def print_first_paragraph(url):
+    page = requests.get(url)
+    print(BeautifulSoup(page.content).find('p'))
 
-text = soup.find('p').text
-print(text)
+print_first_paragraph('https://www.github.com/slenderb13')
