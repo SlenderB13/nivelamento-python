@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
+import requests
 
-with open('parte-5/example.html') as file:
-    soup = BeautifulSoup(file)
+def get_all_paragraphs(url):
+    page = requests.get(url)
+    print(BeautifulSoup(page.content).find_all('p'))
 
-all_paragraphs = soup.find_all('p')
-print(all_paragraphs)
+get_all_paragraphs('https://www.github.com/slenderb13')
